@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holistic English</title>
+
+    <script src="./resource/js/jquery-3.3.1.min.js"></script>
+    <script src="./resource/js/style.js"></script>
+    <link rel="stylesheet" href="./resource/css/module.css">
+    <link rel="stylesheet" href="./resource/css/remixicon.css">
+    <link rel="stylesheet" href="./resource/css/style.css">
+    <link rel="stylesheet" href="./resource/css/responsive.css">
+</head>
+
+<body>
+    <div class="wrap main">
+        <header>
+            <h1>
+                <a href="./index.html" class="logo">
+                    <img src="./resource/images/logo.png" alt="홈으로">
+                </a>
+            </h1>
+            <div class="util">
+                <div class="flex my-data">
+                    <div class="thumb">
+                        <img src="./resource/images/thumb.png" alt="내 이미지">
+                    </div>
+                    <div class="text">
+                        <p><b>홍길동</b></p>
+                        <div class="flex my-poiont">
+                            <img src="./resource/images/icn-poiont.svg" alt="포인트">
+                            <span>9,999</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="flex">
+                    <li class="letter">
+                        <button type="button" class="btn flex no-style">
+                            <i class="ri-mail-line"></i>
+                            <span>쪽지</span>
+                        </button>
+                    </li>
+                    <li>
+                        <a class="btn flex no-style">
+                            <i class="ri-coin-line"></i>
+                            <span>결제</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn flex no-style">
+                            <i class="ri-lock-line"></i>
+                            <span>로그아웃</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li class="act">
+                        <a href="#" class="flex">
+                            <img src="./resource/images/icn-books.svg" alt="#">
+                            <p>오늘의 학습</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex">
+                            <img src="./resource/images/icn-paper.svg" alt="#">
+                            <p>학습 이력</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex">
+                            <img src="./resource/images/icn-user.svg" alt="#">
+                            <p>마이페이지</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex">
+                            <img src="./resource/images/icn-headPhone.svg" alt="#">
+                            <p>고객센터</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex btn-wrap">
+                <a href="#" class="btn no-style">원격지원</a>
+                <a href="#" class="btn no-style">문의하기</a>
+            </div>
+            <div class="header-bottom">
+                <dl class="flex">
+                    <dt>
+                        <img src="./resource/images/logo.png" alt="홀리스틱 잉글리시">
+                    </dt>
+                    <dd>
+                        <p>홀리스틱 문의</p>
+                        <b>1688-9908</b>
+                    </dd>
+                </dl>
+                <dl class="flex">
+                    <dt>
+                        <img src="./resource/images/logo-ghl.svg" alt="하이라이츠 라이브러리">
+                    </dt>
+                    <dd>
+                        <p>하이라이츠 라이브러리 문의</p>
+                        <b class="blue">02-2009-0369</b>
+                    </dd>
+                </dl>
+                <div class="flex period-wrap">
+                    <p>이용기간</p>
+                    <div>
+                        <b>D-122</b>
+                        <div class="flex date">
+                            <span>2099.99.99</span>~<span>2099.99.99</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">결제하기</a>
+            </div>
+            <button type="button" class="btn m-icn-menu close" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        <div class="contents-wrap">
+            <div class="flex inner">
+                <div class="calendar-wrap">
+                    <div class="calendar-top">
+                        <ul class="flex category">
+                            <li class="l">Listening</li>
+                            <li class="s">Speaking</li>
+                            <li class="v">Voca</li>
+                        </ul>
+                        <div class="flex slide-controller">
+                            <button type="button" class="btn arrow prev">이전달 보기</button>
+                            <button type="button" class="flex no-style num">
+                                <span>2025</span>
+                                /
+                                <span>02</span>
+                            </button>
+                            <button type="button" class="btn arrow rotate">다음달 보기</button>
+                        </div>
+                        <button type="button" class="go-today">Today</button>
+                    </div>
+                    <div class="calendar">
+                        <ul class="flex">
+                            <li>SUN</li>
+                            <li>MON</li>
+                            <li>TUE</li>
+                            <li>WED</li>
+                            <li>THUR</li>
+                            <li>FRI</li>
+                            <li>SAT</li>
+                        </ul>
+                        <ul class="flex cell">
+                            <li class="other-month">
+                                <button type="button" class="no-style">
+                                    <span>26</span>
+                                </button>
+                            </li>
+                            <li class="other-month">
+                                <button type="button" class="no-style">
+                                    <span>27</span>
+                                </button>
+                            </li>
+                            <li class="other-month">
+                                <button type="button" class="no-style">
+                                    <span>28</span>
+                                </button>
+                            </li>
+                            <li class="other-month">
+                                <button type="button" class="no-style">
+                                    <span>29</span>
+                                </button>
+                            </li>
+                            <li class="other-month">
+                                <button type="button" class="no-style">
+                                    <span>30</span>
+                                </button>
+                            </li>
+                            <li class="other-month">
+                                <button type="button" class="no-style">
+                                    <span>31</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>1</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>2</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>3</span>
+                                    <ul>
+                                        <li class="l act">
+                                            <div class="flex">
+                                                <span>1</span>/<span>1</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>40</span>
+                                            </div>
+                                        </li>
+                                        <li class="s act">
+                                            <div class="flex">
+                                                <span>2</span>/<span>2</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>20</span>
+                                            </div>
+                                        </li>
+                                        <li class="v act">
+                                            <div class="flex">
+                                                <span>4</span>/<span>4</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>10</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>4</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>5</span>
+                                    <ul>
+                                        <li class="s act">
+                                            <div class="flex">
+                                                <span>2</span>/<span>2</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>20</span>
+                                            </div>
+                                        </li>
+                                        <li class="v act">
+                                            <div class="flex">
+                                                <span>4</span>/<span>4</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>10</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>6</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>7</span>
+                                    <ul>
+                                        <li class="l act">
+                                            <div class="flex">
+                                                <span>2</span>/<span>2</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>40</span>
+                                            </div>
+                                        </li>
+                                        <li class="v act">
+                                            <div class="flex">
+                                                <span>4</span>/<span>4</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>10</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>8</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>9</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>10</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>11</span>
+                                    <ul>
+                                        <li class="l act">
+                                            <div class="flex">
+                                                <span>3</span>/<span>3</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>30</span>
+                                            </div>
+                                        </li>
+                                        <li class="s act">
+                                            <div class="flex">
+                                                <span>1</span>/<span>1</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>10</span>
+                                            </div>
+                                        </li>
+                                        <li class="v act">
+                                            <div class="flex">
+                                                <span>2</span>/<span>2</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>20</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>12</span>
+                                </button>
+                            </li>
+                            <li class="today">
+                                <button type="button" class="no-style">
+                                    <span>13</span>
+                                    <ul>
+                                        <li class="l">
+                                            <div class="flex">
+                                                <span>2</span>/<span>5</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>50</span>
+                                            </div>
+                                        </li>
+                                        <li class="v act">
+                                            <div class="flex">
+                                                <span>2</span>/<span>2</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>30</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li class="act">
+                                <button type="button" class="no-style">
+                                    <span>14</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>15</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>16</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>17</span>
+                                    <ul>
+                                        <li class="l">
+                                            <div class="flex">
+                                                <span>2</span>/<span>5</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>50</span>
+                                            </div>
+                                        </li>
+                                        <li class="s">
+                                            <div class="flex">
+                                                <span>0</span>/<span>2</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>20</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>18</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>19</span>
+                                    <ul>
+                                        <li class="l">
+                                            <div class="flex">
+                                                <span>2</span>/<span>5</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>50</span>
+                                            </div>
+                                        </li>
+                                        <li class="v">
+                                            <div class="flex">
+                                                <span>0</span>/<span>5</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>30</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>20</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>21</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>22</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>23</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>24</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>25</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>26</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>27</span>
+                                    <ul>
+                                        <li class="s">
+                                            <div class="flex">
+                                                <span>0</span>/<span>2</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>20</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>28</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>29</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>30</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="no-style">
+                                    <span>31</span>
+                                    <ul>
+                                        <li class="s">
+                                            <div class="flex">
+                                                <span>2</span>/<span>5</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>50</span>
+                                            </div>
+                                        </li>
+                                        <li class="v">
+                                            <div class="flex">
+                                                <span>0</span>/<span>2</span>
+                                            </div>
+                                            <div class="flex point">
+                                                <span>20</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li class="other-month">
+                                <button type="button" class="no-style">
+                                    <span>1</span>
+                                </button>
+                            </li>
+                            <li class="other-month">
+                                <button type="button" class="no-style">
+                                    <span>2</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="assignments-wrap">
+                    <div class="box blue-box">
+                        <div class="flex class-name">
+                            <p><i class="ri-pencil-ruler-line"></i>Class</p>
+                            <span>학원명이 들어갑니다.</span>
+                            <div class="flex time">
+                                <span>월 수 금</span>
+                                <span>22:00</span>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex slide-controller">
+                                <button type="button" class="btn arrow prev">이전달 보기</button>
+                                <button type="button" class="flex no-style num disabled">
+                                    <span>06</span>
+                                    월
+                                    <span>14</span>
+                                    일 숙제
+                                </button>
+                                <button type="button" class="btn arrow rotate">다음달 보기</button>
+                            </div>
+                            <ul class="flex category">
+                                <li class="l"><span>1</span>/<span>1</span></li>
+                                <li class="s"><span>1</span>/<span>1</span></li>
+                                <li class="v"><span>1</span>/<span>1</span></li>
+                            </ul>
+                        </div>
+                        <ul class="assignments-list">
+                            <li class="flex l">
+                                <div class="text">
+                                    <p class="date">2024.06.16</p>
+                                    <b class="title">Trolls Band Together Trailer</b>
+                                    <p class="parnassus">1문단</p>
+                                </div>
+                                <a href="#" class="btn">학습</a>
+                            </li>
+                            <li class="flex s">
+                                <div class="text">
+                                    <p class="date">2024.06.16</p>
+                                    <b class="title">Trolls Band Together Trailer</b>
+                                    <p class="parnassus">1문단</p>
+                                </div>
+                                <a href="#" class="btn">학습</a>
+                            </li>
+                            <li class="flex v">
+                                <div class="text">
+                                    <p class="date">2024.06.16</p>
+                                    <b class="title">Let's Voca 1 Day 1</b>
+                                    <p class="parnassus">1문단</p>
+                                </div>
+                                <a href="#" class="btn white">복습</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <div class="flex">
+                            <div class="flex slide-controller">
+                                <button type="button" class="btn arrow prev">이전달 보기</button>
+                                <button type="button" class="flex no-style num disabled">
+                                    <span>6</span>
+                                    월
+                                    <span>3</span>
+                                    일 Daily Report
+                                </button>
+                                <button type="button" class="btn arrow rotate">다음달 보기</button>
+                            </div>
+                        </div>
+                        <div class="flex tab-in-tab">
+                            <ul class="flex">
+                                <li class="act">
+                                    <button class="btn no-style" type="button">전체확인</button>
+                                </li>
+                                <li>
+                                    <button class="btn no-style" type="button">Listening</button>
+                                </li>
+                                <li>
+                                    <button class="btn no-style" type="button">Speaking</button>
+                                </li>
+                                <li>
+                                    <button class="btn no-style" type="button">Voca</button>
+                                </li>
+                            </ul>
+                            <p>총 학습시간 <span>00:00:00</span></p>
+                        </div>
+                        <ul class="report">
+                            <li class="l">
+                                <div class="flex top">
+                                    <b>Lestening Report</b>
+                                    <span class="line"></span>
+                                    <p>총 학습시간 <span>00:00:00</span></p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>학습명</dt>
+                                            <dd><b>Trolls ABand Together Trailer</b></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>시작시간</dt>
+                                            <dd>99:99:99</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>숙제 출제일</dt>
+                                            <dd>2099:99:99</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>종료시간</dt>
+                                            <dd>88:88:88</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Step</dt>
+                                            <dd>Listening All</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>학습시간</dt>
+                                            <dd><b>88:88:88</b></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>학습명</dt>
+                                            <dd><b>Trolls ABand Together Trailer</b></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>시작시간</dt>
+                                            <dd>99:99:99</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>숙제 출제일</dt>
+                                            <dd>2099:99:99</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>종료시간</dt>
+                                            <dd>88:88:88</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Step</dt>
+                                            <dd>Listening All</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>학습시간</dt>
+                                            <dd><b>88:88:88</b></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>학습명</dt>
+                                            <dd><b>Trolls ABand Together Trailer</b></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>시작시간</dt>
+                                            <dd>99:99:99</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>숙제 출제일</dt>
+                                            <dd>2099:99:99</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>종료시간</dt>
+                                            <dd>88:88:88</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Step</dt>
+                                            <dd>Listening All</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>학습시간</dt>
+                                            <dd><b>88:88:88</b></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="v">
+                                <div class="flex top">
+                                    <b>Lestening Report</b>
+                                    <span class="line"></span>
+                                    <p>총 학습시간 <span>00:00:00</span></p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>학습명</dt>
+                                            <dd><b>Trolls ABand Together Trailer</b></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>시작시간</dt>
+                                            <dd>99:99:99</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>숙제 출제일</dt>
+                                            <dd>2099:99:99</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>종료시간</dt>
+                                            <dd>88:88:88</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Step</dt>
+                                            <dd>Listening All</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>학습시간</dt>
+                                            <dd><b>88:88:88</b></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dimmed">
+            <div class="popup m-header">
+                <div class="util">
+                    <div class="flex my-data">
+                        <div class="thumb">
+                            <img src="./resource/images/thumb.png" alt="내 이미지">
+                        </div>
+                        <div class="text">
+                            <p><b>김최선</b></p>
+                            <div class="flex my-poiont">
+                                <img src="./resource/images/icn-poiont.svg" alt="포인트">
+                                <span>2,468</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="flex">
+                        <li class="letter">
+                            <button class="btn flex no-style">
+                                <i class="ri-mail-line"></i>
+                                <span>쪽지</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn flex no-style">
+                                <i class="ri-coin-line"></i>
+                                <span>결제</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn flex no-style">
+                                <i class="ri-lock-line"></i>
+                                <span>로그아웃</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="flex btn-wrap">
+                        <a href="#" class="btn no-style">원격지원</a>
+                        <a href="#" class="btn no-style">문의하기</a>
+                    </div>
+                    <div class="header-bottom">
+                        <dl class="flex">
+                            <dt>
+                                <img src="./resource/images/logo.png" alt="홀리스틱 잉글리시">
+                            </dt>
+                            <dd>
+                                <p>홀리스틱 문의</p>
+                                <b>1688-9908</b>
+                            </dd>
+                        </dl>
+                        <dl class="flex">
+                            <dt>
+                                <img src="./resource/images/logo-ghl.svg" alt="하이라이츠 라이브러리">
+                            </dt>
+                            <dd>
+                                <p>하이라이츠 라이브러리 문의</p>
+                                <b class="blue">02-2009-0369</b>
+                            </dd>
+                        </dl>
+                        <div class="flex period-wrap">
+                            <p>이용기간</p>
+                            <div>
+                                <b>D-122</b>
+                                <div class="flex date">
+                                    <span>2099.99.99</span>~<span>2099.99.99</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">결제하기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup calendar">
+                <div class="flex slide-controller">
+                    <button type="button" class="btn arrow prev">이전달 보기</button>
+                    <button type="button" class="flex no-style num disabled">
+                        <span>2025</span>
+                        /
+                        <span>02</span>
+                    </button>
+                    <button type="button" class="btn arrow rotate">다음달 보기</button>
+                </div>
+                <ul class="flex month">
+                    <li><button type="button" class="btn">1월</button></li>
+                    <li><button type="button" class="btn">2월</button></li>
+                    <li><button type="button" class="btn">3월</button></li>
+                    <li><button type="button" class="btn">4월</button></li>
+                    <li><button type="button" class="btn">5월</button></li>
+                    <li class="act"><button type="button" class="btn">6월</button></li>
+                    <li><button type="button" class="btn">7월</button></li>
+                    <li><button type="button" class="btn">8월</button></li>
+                    <li><button type="button" class="btn">9월</button></li>
+                    <li><button type="button" class="btn">10월</button></li>
+                    <li><button type="button" class="btn">11월</button></li>
+                    <li><button type="button" class="btn">12월</button></li>
+                </ul>
+                <button type="button" class="btn close">확인</button>
+            </div>
+            <div class="popup letter">
+                <div class="flex">
+                    <div class="flex tab-in-tab">
+                        <ul class="flex">
+                            <li class="act">
+                                <button class="btn no-style" type="button">받은 쪽지함</button>
+                            </li>
+                            <li>
+                                <button class="btn no-style" type="button">보낸 쪽지함</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn close">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <p class="caption">보낸날짜로부터 30일 이후 자동삭제 됩니다.</p>
+                <table>
+                    <tbody>
+                        <tr class="flex">
+                            <td class="small">999</td>
+                            <td class="small">2099.99.99</td>
+                            <td class="small">선생님 이름이 들어갑니다.</td>
+                            <td class="status">안읽음</td>
+                            <td class="title">여기에 제목이 들어갑니다.</td>
+                        </tr>
+                        <tr class="flex check">
+                            <td class="small">999</td>
+                            <td class="small">2099.99.99</td>
+                            <td class="small">선생님 이름이 들어갑니다.</td>
+                            <td class="status">안읽음</td>
+                            <td class="title">여기에 제목이 들어갑니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="page-list">
+                    <button type="button" class="btn">
+                        <i class="ri-arrow-left-s-fill"></i>
+                    </button>
+                    <ul class="flex">
+                        <li class="act"><button type="button" class="btn">1</button></li>
+                        <li><button type="button" class="btn">2</button></li>
+                        <li><button type="button" class="btn">3</button></li>
+                        <li><button type="button" class="btn">4</button></li>
+                        <li><button type="button" class="btn">5</button></li>
+                    </ul>
+                    <button type="button" class="btn">
+                        <i class="ri-arrow-right-s-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="m-nav">
+            <ul>
+                <li class="act">
+                    <a href="#">
+                        <img src="./resource/images/icn-books.svg" alt="#">
+                        <span>오늘의학습</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./resource/images/icn-paper.svg" alt="#">
+                        <span>학습 이력</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./resource/images/icn-user.svg" alt="#">
+                        <span>마이페이지</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./resource/images/icn-headPhone.svg" alt="#">
+                        <span>고객센터</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

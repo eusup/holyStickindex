@@ -1,0 +1,212 @@
+/* 00main */
+.contents-wrap .inner .assignments-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.contents-wrap .inner .assignments-wrap .box {
+  height: auto;
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .class-name {
+  gap: 6px;
+  width: 100%;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--font-l);
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .class-name p {
+  color: #748FCB;
+
+  & i {
+    font-size: var(--font-l);
+  }
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .class-name span {
+  font-weight: 700;
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .class-name>span{
+  display: -webkit-box;   
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  word-break: normal;
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .class-name>div:last-child {
+  flex-shrink: 0;
+  margin-left: auto;
+
+  & span {
+    font-size: var(--font-r);
+    font-weight: 400;
+  }
+
+  & span:last-child {
+    padding-left: 6px;
+  }
+}
+
+.contents-wrap .inner .assignments-wrap .box .slide-controller .num {
+  font-size: 2.4rem;
+}
+
+.contents-wrap .inner .assignments-wrap .box .slide-controller .arrow {
+  width: 36px;
+  height: 36px;
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .slide-controller .arrow {
+  border: 1px solid #748FCB;
+  background-image: url(../images/icn-arrow-blue.svg);
+}
+
+.contents-wrap .inner .assignments-wrap .box .flex:has(.slide-controller) {
+  position: relative;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .flex:has(.slide-controller) .category {
+  position: absolute;
+  right: 0;
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .assignments-list li {
+  justify-content: space-between;
+  min-width: 0;
+  padding-left: 7px;
+  margin-bottom: 16px;
+  border-left: 5px solid var(--color-main);
+  transition: var(--duration);
+
+  &.l {
+    border-left: 5px solid var(--color-L);
+  }
+
+  &.s {
+    border-left: 5px solid var(--color-S);
+  }
+
+  &.v {
+    border-left: 5px solid var(--color-V);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .assignments-list li .text {
+  width: 100%;
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .assignments-list li .text>* {
+  display: block;
+  margin-bottom: 6px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.date {
+    font-size: 1.5rem;
+    color: #748FCB;
+  }
+
+  &.title {
+    min-width: 0;
+    width: 100%;
+    font-size: var(--font-l);
+    display: -webkit-box;   
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    word-break: normal;
+  }
+
+  &.parnassus {
+    font-size: var(--font-s);
+  }
+}
+
+.contents-wrap .inner .assignments-wrap .blue-box .assignments-list li .btn {
+  width: 84px;
+  padding: 16px 0;
+  border: none;
+  font-size: var(--font-r);
+  transition: var(--duration);
+
+  &.white {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-main);
+    color: var(--color-font);
+  }
+}
+
+.contents-wrap .inner .assignments-wrap .box .tab-in-tab p {
+  margin-left: auto;
+  font-size: var(--font-s);
+}
+
+/* 00main end */
+
+/* hover */
+@media (hover: hover) and (pointer: fine) {
+  .btn.arrow:hover {
+    transform: translateX(-5px);
+  }
+
+  .btn.rotate.arrow:hover {
+    transform: rotate(180deg) translateX(-5px);
+  }
+
+  .slide-controller .num:hover {
+    transform: translateY(-5px);
+  }
+
+  header nav ul li:hover {
+    text-indent: 12px;
+
+    & img {
+      transform: translateX(8px) scale(1.1);
+    }
+  }
+
+  header .header-bottom .btn:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0px 6px 8px var(--color-shadow);
+  }
+
+  .contents-wrap .inner .calendar-wrap .calendar>ul.cell>li button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 8px var(--color-shadow);
+  }
+
+  .contents-wrap .inner .assignments-wrap .blue-box .assignments-list li:has(.btn:hover) {
+    padding-left: 15px;
+  }
+
+  .contents-wrap .inner .assignments-wrap .blue-box .assignments-list li .btn:hover {
+    box-shadow: 0px 5px 8px var(--color-shadow);
+    transform: translateY(-5px);
+  }
+
+  .popup.letter table tr:hover{
+    text-indent: 5px;
+  }
+
+  .page-list .btn:hover{
+    background-color: var(--color-sub);
+  }
+
+}
+
+/* hover end */

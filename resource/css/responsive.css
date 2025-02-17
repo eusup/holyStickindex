@@ -1,0 +1,310 @@
+@media screen and (max-width : 1600px){
+    :root{
+        --gap: 24px;
+        --padding: 24px;
+        --radius: 10px;
+    }
+
+    .contents-wrap{
+        padding: 30px;
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar>ul.cell>li ul li .point span{
+        align-items: center;
+        gap: 2px;
+        &::after{
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .contents-wrap .inner .assignments-wrap{
+        padding-bottom: 30px;
+    }
+
+    .contents-wrap .inner .assignments-wrap .blue-box .flex:has(.slide-controller){
+        justify-content: flex-start;
+    }
+
+    .contents-wrap .inner .assignments-wrap .box .tab-in-tab{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 1440px){
+    :root{
+        --gap: 24px;
+        --padding: 24px;
+        --font-s: 1.3rem;
+        --font-r: 1.4rem;
+        --font-l: 1.6rem;
+        --font-v: 1.8rem;
+    }
+
+    .contents-wrap .inner .calendar-wrap{
+        min-width: 574px;
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar>ul>li{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width : 1360px){
+    .btn.arrow{
+        width: 32px;
+        height: 32px;
+        background-size: 20px;
+    }
+
+    .slide-controller{
+        gap: 4px;
+    }
+
+    .tab-in-tab{
+        margin-bottom: 10px;
+    }
+
+    header{
+        width: 300px;
+    }
+
+    header .logo{
+        height: 36px;
+    }
+
+    header .util .my-data .thumb{
+        width: 48px;
+        height: 48px;
+    }
+
+    header .util .my-data p{
+        font-size: 1.8rem;
+    }
+
+    .slide-controller .num{
+        font-size: 2.6rem;
+    }
+
+    .contents-wrap .inner .calendar-wrap{
+        min-width: 520px;
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar>ul.cell>li{
+        height: 86px;
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar>ul.cell>li button{
+        font-size: 1.2rem;
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar>ul.cell>li ul li{
+        padding: 0px 4px;
+    }
+
+    .contents-wrap .inner .assignments-wrap .box .flex:has(.slide-controller){
+        margin-bottom: 12px;
+    }
+
+    .contents-wrap .inner .assignments-wrap .box .slide-controller .arrow{
+        width: 32px;
+        height: 32px;
+        background-size: 20px;
+    }
+
+    .contents-wrap .inner .assignments-wrap .box .slide-controller .num{
+        font-size: 1.8rem;
+    }
+
+    .contents-wrap .inner .assignments-wrap .blue-box .class-name{
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .contents-wrap .inner .assignments-wrap .blue-box .assignments-list li{
+        flex-direction: column;
+    }
+
+    .contents-wrap .inner .assignments-wrap .blue-box .assignments-list li .btn{
+        margin-left: auto;
+    }
+
+    .contents-wrap .inner .assignments-wrap .blue-box .assignments-list li .btn{
+        width: auto;
+        padding: 14px 28px;
+    }
+}
+
+@media screen and (max-width : 1280px){
+    .wrap{
+        flex-direction: column;
+    }
+    .contents-wrap{
+        padding-bottom: 94px;
+    }
+
+    header{
+        width: 100%;
+        background-color: var(--color-white);
+        box-shadow: 0px 4px 8px var(--color-shadow);
+    }
+    header .util,
+    header nav,
+    header .btn-wrap,
+    header .header-bottom{
+        display: none;
+    }
+
+    .contents-wrap .inner .assignments-wrap{
+        padding-bottom: 0;
+    }
+
+    /* mobile */
+    .m-icn-menu,
+    .m-nav{
+        display: block;
+    }
+    /* mobile end */
+}
+
+@media screen and (max-width : 1024px){
+    :root{
+        --gap: 18px;
+        --padding: 18px;
+    }
+
+    .contents-wrap .inner .assignments-wrap{
+        gap: 18px;
+    }
+
+    .contents-wrap .inner .assignments-wrap .blue-box .assignments-list li{
+        padding-left: 4px;
+        border-left: 3px solid var(--color-L);
+    }
+}
+
+@media screen and (max-width : 960px){
+    .slide-controller .num{
+        font-size: var(--font-l);
+    }
+
+    .contents-wrap{
+        padding: 15px;
+        padding-top: 36px;
+        padding-bottom: 24px;
+    }
+
+    .contents-wrap .inner{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .contents-wrap .inner .calendar-wrap{
+        position: relative;
+        min-width: inherit;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar-top{
+        flex-wrap: wrap;
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar-top .category{
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar-top .go-today{
+        padding: 6px 20px;
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar>ul.cell>li ul li{
+        justify-content: center;
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar>ul.cell>li ul li .point span{
+        display: none;
+    }
+
+    .contents-wrap .inner .calendar-wrap .calendar>ul.cell>li.today button span::after{
+        display: none;
+    }
+
+    .contents-wrap .inner .assignments-wrap{
+        gap: 12px;
+        padding-bottom: 0;
+    }
+
+    .report li ul li dl:first-child{
+        width: 100%;
+    }
+
+    /* popup */
+    .popup.m-header{
+        right: 0;
+        top: 0;
+        border-radius: 0;
+        width: 100%;
+        max-width: inherit;
+        height: 100dvh;
+        max-height: inherit;
+        opacity: 1;
+        &.act{
+            animation: none;
+        }
+    }
+    .m-icn-menu.act{
+        top: 20px;
+        right: 20px;
+    }
+    /* popup end */
+}
+
+@media screen and (max-width : 400px){
+    .m-icn-menu{
+        width: 28px;
+        height: 28px;
+    }
+
+    .m-icn-menu span{
+        height: 2px;
+    }
+}
+
+
+@media screen and (max-height : 900px){
+    header .logo{
+        margin-top: 15px;
+    }
+
+    header .util ul{
+        margin: 10px auto;
+        margin-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    header nav ul li a{
+        padding: 18px 15px;
+    }
+
+    header .btn-wrap{
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    header .header-bottom dl{
+        margin-bottom: 15px;
+    }
+
+    header .header-bottom{
+        padding: 15px;
+    }
+
+    header .header-bottom .period-wrap{
+        padding-top: 15px;
+    }
+}
