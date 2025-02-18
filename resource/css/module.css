@@ -1033,7 +1033,7 @@ header .header-bottom .btn{
   transform: translate(-50%,-50%);
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 860px;
   padding: var(--padding);
   background-color: var(--color-white);
